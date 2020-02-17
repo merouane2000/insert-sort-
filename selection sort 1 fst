@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std ;
+
+void insert (int t[],int n ){
+	
+	for (int i=1;i<n;i++){
+		int val=t[i];
+		int min =i;
+		while ( min>0 and t[min-1]> val){
+         t[min]=t[min-1];
+         min--;
+		}
+t[min]=val;
+	}
+}
+
+
+
+int main(int argc, char** argv) {
+	
+ int a[]={5,687,548,7,5,-11,0} ; 
+ insert (a,7);
+ for (int i=0;i<8;i++)               		
+
+cout<<a[i]<<" ";    
+
+
+	
+
+
+
+
+	return 0;
+}
